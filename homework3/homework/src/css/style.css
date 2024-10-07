@@ -1,0 +1,235 @@
+.caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-image: linear-gradient(rgb(54, 54, 54) ,rgb(0, 0, 0));
+    color: rgb(80, 173, 255);
+    font-size: 10vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration:underline 0.5vh ;
+    position: absolute;
+    z-index: 1;
+}
+.imgcaixa{
+    height: 6.5vh;
+    width: 6.5vh;
+    position: relative;
+    left: 74vh;
+}
+.caixabaixa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bgfloresta.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 220vh;
+}
+.todacaixa{
+    position: relative;
+    width: 75vh;
+    height: 80vh;
+    backdrop-filter: blur(3vh);
+    top: 5vh;
+    border-radius: 5vh;
+    font-size: 4vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+    box-shadow: 0px 0px 5vh white;
+}
+.img1{
+    width: 25vh;
+    height: 25vh;
+    border-radius: 100%;
+    position: absolute;
+    left: 27vh;
+    border: solid whitesmoke 0.3vh;
+}
+.text1{
+    width: 71vh;
+    height: 43vh;
+    background-color: rgb(235, 232, 218);
+    position: absolute;
+    top: 35vh;
+    border-radius: 2vh;
+    color: black;
+    padding: 2vh;
+}
+.caixameio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75vh;
+    background-image: url(../img/fundo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300vh;
+    flex-direction: row;
+}
+.linhas{
+    width: 100%;
+    height: 1vh;
+    background-color: black;
+}
+.imgtec{
+    width: 25vh;
+    height: 25vh;
+    margin: 5vh;
+    border-radius: 5vh;
+    transition: 1s;
+    right: 26vh;
+    position: relative;
+    animation: glow 2s ease-in-out infinite;
+}
+.imgtec:hover{
+    scale: 1.1;
+    transition: 2s;
+    box-shadow: 0.1vh 0.1vh 0.8vh black;
+}
+.hab{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 7vh;
+    position: relative;
+    bottom: 30vh;
+    left: 70vh;
+    text-decoration: underline;
+}
+.caixafinal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75vh;
+    background-image: url(../img/fundoimg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 225vh;
+    flex-direction: row;
+}
+.finaltela{
+    height: 5vh;
+    width: 100%;
+    background-image:  linear-gradient(90deg , rgb(130, 240, 130),rgb(58, 180, 58));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5vh;
+}
+@keyframes glow {
+    0%{
+        box-shadow: 0vh 0vh 2vh white;
+    }
+    50%{
+        box-shadow: 0vh 0vh 0.5vh white;
+    }
+    100%{
+        box-shadow: 0vh 0vh 2vh white;
+    }
+}
+.csscss{
+    width: 20vh;
+    height: 20vh;
+    border-radius: 2vh;
+    transition: 2s;
+    position: relative;
+    right: 35vh;
+    margin: 5vh;
+}
+.csscss:hover{
+    scale: 1.05;
+    transition: 1.5s;
+}
+.trabalhos{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10vh;
+    position: relative;
+    bottom: 30vh;
+    left: 30vh;
+}
+@media screen and (max-width: 700px){
+.caixa{
+    width: 100%;
+}
+.imgcaixa{
+    left: 0vh;
+}
+.csscss{
+    scale: 75%;
+    right: 0vh;
+    margin: 0vh;
+}
+.caixafinal{
+    flex-direction: column;
+    right: 0vh;
+    font-size: 0.5vh;
+
+}
+.hab{
+    left: 0vh;
+    bottom: 0vh;
+    font-size: 3vh;
+    color: black;
+}
+.imgtec{
+    scale: 50%;
+    margin: -3vh;
+    right: 0vh;
+}
+.caixameio{
+    flex-direction: column;
+
+}
+.finaltela{
+    font-size: 2.5vh;
+}
+.trabalhos{
+    bottom: 0vh;
+    left: 0vh;
+    font-size: 3vh;
+}
+.todacaixa{
+    scale: 75%;
+    font-size: 3vh;
+}
+.text1{
+    scale: 85%;
+    font-size: 4vh;
+    right: -2vh;
+    width: 100%;
+}
+.img1{
+left: 10vh;
+}
+.caixa{
+    font-size: 5vh;
+}
+}
+.inserts input{
+width: 25vh;
+height: 3vh;
+background-color: white;
+font-size: 2vh;
+overflow: hidden;
+border: none;
+margin: 1vh;
+box-shadow: 0.6;
+}
+.inserts button{
+width: 7vh;
+height: 3vh;
+background-color: white;
+font-size: 2vh;
+overflow: hidden;
+
+}
